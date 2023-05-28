@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joélisson Santana</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/padrao.css">
+    <link rel="stylesheet" href="./styles/style-index.css">
+    <link rel="stylesheet" href="./styles/bg-animated.css">
+</head>
+<body onload="setarMain()">
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <header>
+
+        <h1 class="title-do-header">Joélisson Santana</h1>
+        
+        <nav class="links-do-header">
+            <ul class="lista-do-nav">
+                <li id="resumo" class="nav-links" onclick="setarMain('Resumo', 'resumo')">
+                    <a href="#Resumo" rel="Internal">Resumo</a>
+                </li>
+                <li id="sobre" class="nav-links" onclick="setarMain('Sobre', 'sobre')">
+                    <a href="#Sobre" rel="Internal">Sobre</a>
+                </li>
+                <li id="projetos" class="nav-links" onclick="setarMain('Projetos', 'projetos')">
+                    <a href="#Projetos" rel="Internal">Projetos</a>
+                </li>
+                <li id="contato" class="nav-links" onclick="setarMain('Contato', 'contato')">
+                    <a href="#Contato" rel="Internal">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Resumo" class="pa">
+            <p><span>Olá, me chamo Joélisson, </span> sou um estudante em busca de me tornar um desenvolvedor front-end, já estudo há alguns meses, e agora estou em busca das minhas primeiras experiências profissionais para iniciar minha carreira na área. </p>
+            <div><img src="imagens/foto-joelisson.png" alt="minha foto"></div>
+        </section>
+        <section id="Sobre" class="pa">
+                <p>Meu nome é Joélisson Silva Santana, tenho 20 anos e estudo desenvolvimento frontend há algum tempo, através de cursos online e projetos pessoais. Atualmente, estou prestes a concluir meu primeiro semestre da faculdade de Análise e Desenvolvimento de Sistemas (ADS), onde tenho aprendido ainda mais sobre desenvolvimento de software.</p>
+                <br>
+                <br>
+                <p>Busco aprimorar minhas habilidades em linguagens de programação como HTML, CSS e JavaScript, e estou sempre em busca de novos conhecimentos e em breve frameworks frontend como react. Através de projetos pessoais, tenho aplicado meus conhecimentos em desenvolvimento frontend e aprendido a criar sites responsivos e interativos.</p>
+                <br>
+                <img src="imagens/logos_html_css_js.png" alt="logos das tecnologias">
+                
+                <br>
+                <p>Estou em busca de uma oportunidade de estágio que me permita aplicar e expandir minhas habilidades em um ambiente de trabalho profissional. Meu objetivo é me tornar um desenvolvedor frontend competente e sempre buscar evoluir em minha carreira. Agradeço pela oportunidade de apresentar minhas habilidades e conhecimentos e espero ter a chance de contribuir como estagiário em sua empresa.</p>
+            </section>
+            <section id="Projetos" class="pa">
+                <section class="layout-projetos">
+                    <h2>Landing Page Android</h2>
+                    <p>Feita a partir do desafio do curso de html e css do Curso em Video do Gustavo Guanabara, consiste em uma simples landing page falando sobre o sistema operacional android sendo aplicados um html semântico e um design responsivo.
+                    </p>
+                    <img src="imagens/Android.jpg" alt="imagem de demostração do projeto Android">
+                    <p class="links-do-site">
+                        <img src="imagens/imagem-clip.png" alt="imagem de link" >
+                        <a target="_blank" rel="external" href="https://joelissonss.github.io/Landing-page-Android/">Acessar site</a>
+                    
+                        <img src="imagens/logo-github.png" alt="logo do github">
+                        <a target="_blank" rel="external" href="https://github.com/JoelissonSS/Landing-page-Android">Ver o código</a>
+                    </p>
+                    <p class="tecnologias-usadas">
+                        <img src="imagens/html.svg" alt="imagem da logo html">
+                        <img src="imagens/css.svg" alt="imagem da logo da css">
+                        <img src="imagens/javascript.svg" alt="imagem da logo do javascript">
+                    </p>
+                </section>
+                <section class="layout-projetos">
+                    <h2>Joy Quiz</h2>
+                    <p>Este é um quiz que utiliza JavaScript para mudar as perguntas a cada partida. Ele armazena as perguntas e respostas em um objeto JavaScript, permitindo a seleção e a mudança constante dos dados. Ao final do quiz de 5 perguntas, ele mostra ao usuário o número de respostas corretas.
+                    </p>
+                    <img src="imagens/JoyQuiz.jpg" alt="imagem de demostração do projeto JoyQuiz">
+                    <p class="links-do-site">
+                        <img src="imagens/imagem-clip.png" alt="imagem de link" >
+                        <a target="_blank" rel="external" href="https://joelissonss.github.io/JoyQuiz/">Acessar site</a>
+                    
+                        <img src="imagens/logo-github.png" alt="logo do github">
+                        <a target="_blank" rel="external" href="https://github.com/JoelissonSS/JoyQuiz">Ver o código</a>
+                    </p>
+                    <p class="tecnologias-usadas">
+                        <img src="imagens/html.svg" alt="imagem da logo html">
+                        <img src="imagens/css.svg" alt="imagem da logo da css">
+                        <img src="imagens/javascript.svg" alt="imagem da logo do javascript">
+                    </p>
+                </section>
+                
+
+            </section>
+            <p id="Contato" class="pa">
+                Contatos Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere, consequatur nostrum dignissimos ipsa, explicabo asperiores at labore officia, rerum vel minima in maiores sapiente corporis. Ipsa quaerat numquam culpa.
+            </p>
+        </section>
+    </main>
+    
+</body>
+    <script src="scripts/iniciar pagina.js"></script>
+</html> 
