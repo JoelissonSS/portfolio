@@ -1,43 +1,31 @@
 <!DOCTYPE html>
-<html lang="tp-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Joélisson Silva Santana">
+    <meta name="description" content="Olá, esse é meu portfólio para mostrar meus conhecimentos em desenvolvimento web, um pouco sobre mim e meios de contato comigo.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joélisson Santana</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/padrao.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style-index.css">
     <link rel="stylesheet" href="./styles/bg-animated.css">
 </head>
-<body onload="setarMain()">
-    <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+<body onload="setMain()">
     <header>
-
         <h1 class="title-do-header">Joélisson Santana</h1>
-        
         <nav class="links-do-header">
             <ul class="lista-do-nav">
-                <li id="resumo" class="nav-links" onclick="setarMain('Resumo', 'resumo')">
+                <li id="resumo" class="nav-links" onclick="setMain('Resumo', 'resumo')">
                     <a href="#Resumo" rel="Internal">Resumo</a>
                 </li>
-                <li id="sobre" class="nav-links" onclick="setarMain('Sobre', 'sobre')">
+                <li id="sobre" class="nav-links" onclick="setMain('Sobre', 'sobre')">
                     <a href="#Sobre" rel="Internal">Sobre</a>
                 </li>
-                <li id="projetos" class="nav-links" onclick="setarMain('Projetos', 'projetos')">
+                <li id="projetos" class="nav-links" onclick="setMain('Projetos', 'projetos')">
                     <a href="#Projetos" rel="Internal">Projetos</a>
                 </li>
-                <li id="contato" class="nav-links" onclick="setarMain('Contato', 'contato')">
+                <li id="contato" class="nav-links" onclick="setMain('Contato', 'contato')">
                     <a href="#Contato" rel="Internal">Contato</a>
                 </li>
             </ul>
@@ -94,7 +82,6 @@
                         <img src="imagens/html.svg" alt="imagem da logo html">
                         <img src="imagens/css.svg" alt="imagem da logo da css">
                         <img src="imagens/javascript.svg" alt="imagem da logo do javascript">
-                    </p>
                 </section>
                 
 
@@ -105,6 +92,19 @@
         </section>
     </main>
     
+    <!-- lista para animação do background -->
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </body>
-    <script src="scripts/iniciar pagina.js"></script>
+    <script src="scripts/setMain.js"></script>
 </html> 

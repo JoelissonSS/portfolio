@@ -16,11 +16,15 @@
     font-family: 'Outfit', sans-serif;
     box-sizing: border-box;
     outline: none;
+    
 }
 body{
     height: 100vh;
     padding: 20px;
     background-color: var(--cor-de-fundo);
+}
+a{
+    color: #000;
 }
 a:visited{
     color: black;

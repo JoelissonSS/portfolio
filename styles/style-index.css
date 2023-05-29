@@ -9,22 +9,21 @@ main{
     height: 70vh;
 }
 header{
-    height: 150px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 2rem;
 }
 .title-do-header {
+    margin-top: 20px;
     letter-spacing: 1px;
     white-space: nowrap;
     overflow: hidden;
 	animation: write 2.5s steps(17) alternate,
     blink 800ms steps(20) infinite normal;
-    border-right: 5px solid black;
-    margin-top: 20px;
+    border-right: 3px solid black;
 }
 .links-do-header{
     padding: .5em;
@@ -139,14 +138,18 @@ header{
     padding: 4px;
 }
 .layout-projetos > img{
-    max-height: 80%;
+    max-width: 80%;
 }
 .tecnologias-usadas{
     display: flex;
-    justify-content: center;
+    
+    width: 90%;
+    
 }
-.tecnologias-usadas > img{
-    max-width: 30%;
+.tecnologias-usadas img{
+    flex: 1;
+    padding: 2px;
+
 }
 .links-do-site{
     display: grid;
