@@ -57,6 +57,7 @@ header{
     min-height: 500px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.22);
     height: 100%;
+    max-height: 80vh;
     margin-bottom: 30px;
 }
 #Resumo{
@@ -94,13 +95,12 @@ header{
 }
 
 #Projetos{
-    max-height: 80vh;
     overflow-y: scroll;
     max-height: 100%;
     position: relative;
 }
 #Projetos::-webkit-scrollbar {
-    width: 1rem;
+    width: .6rem;
 }
 #Projetos::-webkit-scrollbar-track {
     background: transparent;
@@ -117,7 +117,7 @@ header{
     grid-template-rows: auto 1fr 1fr;
     place-items: center;
     position: relative;
-    margin: 20px;
+    margin-top: 20px;
 }
 .layout-projetos:not(:last-child):after{
     content: "";
@@ -136,6 +136,7 @@ header{
 .layout-projetos > p{
     font-size: .9em;
     padding: 4px;
+    text-align: justify;
 }
 .layout-projetos > img{
     max-width: 80%;
@@ -164,15 +165,19 @@ header{
     max-width: 1.6em;
 }
 
-@media (max-width: 800px){
+@media (max-width: 700px){
+    header{
+        margin: 0;
+    }
+    .pa{
+        height: calc(100vh);
+    }
     #Resumo{
         display: flex;
         flex-direction: column;
     }
 
     .layout-projetos{
-        margin: 20px;
-        height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto;
@@ -207,3 +212,4 @@ header{
         font-size: .8em;
     }
 }
+
